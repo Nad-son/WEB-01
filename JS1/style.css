@@ -1,0 +1,25 @@
+*{box-sizing:border-box} :root{--bg:#06101f;--panel:#0b1b30;--blue:#1597ff;--gold:#ffc45c;--text:#f4f7fb;--muted:#bac8d9}
+html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Arial,Helvetica,sans-serif}
+a{color:inherit}.topo{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 7%;background:#030a14;border-bottom:1px solid #163553}
+.marca{text-decoration:none;font-size:1.6rem;font-weight:900}.marca span,h1 span{color:var(--blue)}nav{display:flex;gap:22px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--muted);font-weight:bold}nav a:hover,footer a:hover,.fonte:hover{color:var(--gold)}
+.hero{padding:55px 7%;min-height:340px;background:linear-gradient(90deg,#030a14f5,#06101fba),url('assets/fundo-cinema.jpg') center/cover,radial-gradient(circle at 75% 30%,#154f80,#071222 65%);border-bottom:1px solid #163553}
+.hero h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.1;margin:0 0 14px}.hero p:not(.etiqueta){max-width:600px;color:#d6e2f0}
+.etiqueta{color:var(--gold);font-size:.75rem;font-weight:900;letter-spacing:2px;margin:0 0 8px}.botao{display:inline-block;padding:10px 17px;border-radius:7px;background:var(--gold);color:#06101f;text-decoration:none;font-weight:bold}.secao{padding:42px 7%}
+h2{font-size:clamp(1.7rem,3vw,2.3rem);margin:0 0 22px}.grade{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.filme{overflow:hidden;background:var(--panel);border:1px solid #163c5d;border-radius:12px;padding-bottom:15px;transition:.2s}.filme:hover{transform:translateY(-4px);border-color:var(--blue)}
+.poster{height:250px;display:flex;position:relative;align-items:center;justify-content:center;overflow:hidden;text-align:center;text-decoration:none;background:linear-gradient(145deg,#174b70,#080d19 70%);font-size:1.35rem;font-weight:900;letter-spacing:1px;padding:12px}
+.poster img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0}.poster b{z-index:0;text-shadow:0 2px 9px #000}.filme-info{padding:14px}.tag{display:inline-block;border-radius:20px;padding:2px 9px;font-size:.72rem;font-weight:bold}.terror{background:#a32d40}.aventura{background:#246da5}.suspense{background:#5845a5}.esporte{background:#187653}.heroi{background:#9c3939}.epico{background:#277b87}
+.filme h3{font-size:1.03rem;line-height:1.3;margin:10px 14px}.filme p{padding:0 14px;color:var(--muted);font-size:.9rem}.fonte{margin:0 14px;color:#63bdff;font-weight:bold;text-decoration:none;font-size:.85rem}
+.tabela{background:#081729}.rolagem{overflow-x:auto}table{width:100%;border-collapse:collapse;background:#0b1b30}th,td{border:1px solid #24425d;padding:12px;text-align:left}th{color:var(--gold);background:#102842}tbody tr:nth-child(even){background:#0e2239}tbody tr:hover{background:#163553}.nota{font-size:.82rem;color:var(--muted)}
+.sobre{display:grid;grid-template-columns:140px 1.2fr 1fr;gap:25px;align-items:center;background:linear-gradient(135deg,#0c2035,#06101f)}.foto{position:relative;width:140px;height:140px;border-radius:50%;border:3px solid var(--blue);background:#152c43;display:grid;place-items:center;color:var(--gold);font-size:2rem;font-weight:bold;overflow:hidden}.foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}blockquote{margin:0;padding:18px;border-left:3px solid var(--blue);font-style:italic;color:#d9e8f7}cite{display:block;margin-top:12px;color:var(--gold);font-style:normal;font-weight:bold}.sobre p:not(.etiqueta){color:var(--muted)}
+footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:20px 7%;background:#030a14;border-top:1px solid #163553;color:var(--muted);font-size:.85rem}footer a{color:#63bdff;text-decoration:none;font-weight:bold}
+@media(max-width:1050px){.grade{grid-template-columns:repeat(3,minmax(0,1fr))}.sobre{grid-template-columns:120px 1fr}.sobre blockquote{grid-column:1/-1}.foto{width:120px;height:120px}}
+@media(max-width:700px){.topo{align-items:flex-start;flex-direction:column}nav{gap:14px}.grade{grid-template-columns:repeat(2,minmax(0,1fr))}.poster{height:210px}.sobre{grid-template-columns:1fr}}
+@media(max-width:430px){.grade{grid-template-columns:1fr}.poster{height:300px}}
+
+#catalogo .filme img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CineMundo | Filmes e Histórias</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topo" id="inicio">
+  <a class="marca" href="#inicio">🎬 Cine<span>Mundo</span></a>
+  <nav><a href="#filmes">Filmes</a><a href="#tabela">Tabela</a><a href="#sobre">Sobre mim</a></nav>
+</header>
+<main>
+<section class="hero">
+  <p class="etiqueta">ESPECIAL DE CINEMA</p>
+  <h1>Histórias que ficam <span>na memória</span></h1>
+  <p>Uma seleção de aventuras, mistérios, adrenalina e mundos extraordinários.</p>
+  <a class="botao" href="#filmes">Explorar filmes ↓</a>
+</section>
+
+<section class="secao" id="filmes">
+  <p class="etiqueta">ESCOLHA SUA PRÓXIMA SESSÃO</p>
+  <input type="text" id="busca" placeholder="Buscar filme...">
+  <select id="filtro-genero">
+    <option value="Todos">Todos</option>
+    <option value="Terror">Terror</option>
+    <option value="Ação">Ação</option>
+    <option value="Aventura">Aventura</option>
+   
+</select>
+<button id="btn-inverter">Inverter ordem</button>
+  <h2>Filmes em destaque</h2>
+  <p>Quantidade de filmes: <span id="contador">0</span></p>
+  <p>Filmes favoritos: <span id="contador-favoritos">0</span></p>
+
+<ul id="lista-favoritos"></ul>
+
+<button id="btn-limpar-favoritos">Limpar favoritos</button>
+  <div class="grade" id="catalogo">
+    <div id="catagolo"></div>
+  </div>
+</section>
+<section class="secao tabela" id="tabela"><p class="etiqueta">CONSULTA RÁPIDA</p><h2>Tabela de filmes</h2>
+<div class="rolagem"><table><thead><tr><th>Filme</th><th>Ano</th><th>Gênero</th><th>Tema</th></tr></thead><tbody>
+<tr><td>Resident Evil</td><td>2026</td><td>Terror / Ação</td><td>Sobrevivência</td></tr>
+<tr><td>Assassin's Creed</td><td>2016</td><td>Ação / Aventura</td><td>Memórias e sociedades secretas</td></tr>
+<tr><td>Pânico VI</td><td>2023</td><td>Terror / Suspense</td><td>Investigação e perseguição</td></tr>
+<tr><td>Uncharted: Fora do Mapa</td><td>2022</td><td>Aventura / Ação</td><td>Caça ao tesouro</td></tr>
+<tr><td>Gran Turismo</td><td>2023</td><td>Drama / Esporte</td><td>Sonho e automobilismo</td></tr>
+<tr><td>Homem-Aranha: Um Novo Dia</td><td>2026</td><td>Super-herói</td><td>Identidade e responsabilidade</td></tr>
+<tr><td>A Odisseia</td><td>2026</td><td>Épico / Aventura</td><td>Retorno e superação</td></tr>
+</tbody></table></div><p class="nota">Sinopses resumidas para fins educativos. Consulte os sites oficiais para atualizações.</p>
+</section>
+<section class="sobre secao" id="sobre">
+  <div class="foto"><img src="assets/minha-foto.jpg.jpeg" alt="Foto de Nadson Dias" onerror="this.style.display='none'"><b>ND</b></div>
+  <div><p class="etiqueta">QUEM CRIOU ESTE SITE?</p><h2>Sobre o autor</h2>
+  <p>Olá! Sou <strong>Nadson Dias</strong>, estudante de Engenharia de Software e entusiasta de tecnologia, programação e cinema. Criei este projeto para praticar HTML e CSS, organizar informações sobre filmes e aprender a transformar ideias em páginas para a internet.</p>
+  <p>Este trabalho mostra como a programação pode ser usada para comunicar, pesquisar e criar experiências visuais.</p></div>
+  <blockquote>“Cada história abre uma janela para um mundo novo. Aprender a criar também é aprender a imaginar, experimentar e evoluir.”<cite>— Nadson Dias</cite></blockquote>
+</section>
+</main>
+<footer><span>© 2026 CineMundo • Projeto acadêmico de Desenvolvimento Web</span><a href="#inicio">Voltar ao início ↑</a></footer>
+<script src="script.js"></script>
+</body></html>
