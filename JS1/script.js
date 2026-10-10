@@ -63,6 +63,11 @@ function mostrarFilmes(lista) {
     const contador = document.getElementById("contador");
 
     catalogo.innerHTML = "";
+    if (lista.length === 0) {
+    catalogo.innerHTML = "<p>Nenhum filme encontrado.</p>";
+    contador.textContent = 0;
+    return;
+}
 
     for (let i = 0; i < lista.length; i++) {
         const filme = lista[i];
