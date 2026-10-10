@@ -43,7 +43,7 @@ const filmes = [
     },
     {
         titulo: "Resident Evil",
-        ano: 2002,
+        ano: 2026,
         genero: "Terror",
         nota: 9.0,
         poster: "assets/resident-evil.jpg"
